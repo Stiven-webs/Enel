@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #BDBDB8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div, footer, main, section, header, nav, ul, h1, h2, img, p {
+    box-sizing: border-box;
+}
+.titulo{
+    margin: 50px;
+}
+.container{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.subtitulo{
+    font-size: 40px;
+    font-weight: bold;
+}
+.container__titulo{
+    text-align: center;
+    color: #3D5A98;
+    font-size: 35px;
+}
+.container__contenido{
+    display: flex;
+    margin: 20px 150px;
+}
+.container__mision-vision{
+    margin: auto;
+    padding: 20px;
+}
+.container__mision-vision h3{
+    text-align: center;
+    font-size: 30px;
+}
+.container__mision-vision p{
+    text-align: justify;
+    font-size: 20px;
+}
+.container__numeros{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+.numeros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+}
+.num{
+    flex-grow: 1;
+}
+.num h3{
+    font-size: 60px;
+    margin: 0;
+
+}
+.num p{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.bloques{
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 230px;
+}
+.bloque{
+    margin: 50px auto;
+    display: inline-block;
+    background-size: contain;
+    background-color: #13072E;
+}
+.bloque__superior{
+    background-color: #13072E;
+    height: 300px;
+    width: 60px;
+    position: fixed;
+    top: 100px;
+}
+.relleno{
+    background-color: #169D53;
+    width: 340px;
+    height: 20px;
+    position: absolute;
+    transition: 1s;
+}
+.bloque:hover{
+    cursor: pointer;
+}
+.bloque:hover .relleno{
+    cursor: pointer;
+    height: 450px;
+    transition: 1s;
+}
+.textito{
+    display: flex;
+}
+.textito h4{
+    color: aliceblue;
+    font-size: 30px;
+    padding: 5px;
+    position: absolute;
+    margin: 420px 40px 5px 15px;
+    transition: 1s;
+}
+.bloque:hover h4{
+    margin: 100px 40px 5px 15px;
+    transition: 1s;
+}

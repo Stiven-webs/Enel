@@ -1,0 +1,125 @@
+
+.titulo{
+  background-color: #BDBDB8;
+}
+.centro{
+  background-color: #BDBDB8;
+}
+
+
+
+.mision{
+  font-family: 'Courier New';
+  font-weight: bold;
+  line-height: 2; /* Espaciado entre líneas */
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+  color: #006FBB; /* Color del texto */
+  animation: fade 2s ease-in-out infinite; /* Nombre de la animación, duración, función de temporización, repetición */
+  font-size: 50px; /* Tamaño de la fuente */
+  text-align: center;
+  margin: 0;
+}
+/* Define la animación */
+@keyframes fade {
+  0% { opacity: 3; } /* Inicio: totalmente visible */
+  50% { opacity: 0.5; } /* Mitad: semi-transparente */
+  100% { opacity: 1; } /* Fin: totalmente visible nuevamente */
+}
+.mision:hover{
+  font-size: 350%; /* Aumenta el tamaño de la fuente*/
+}
+
+
+
+
+/* Estilos para las tarjetas al hacer hover */
+.card:hover {
+  transform: translateY(-20px) scale(1.05); /* Aumentar el tamaño */
+  box-shadow: 0 20px 25px 2.5px rgb(109, 98, 98); /* Cambia la sombra de la tarjeta */
+}
+/* Estilos para las tarjetas */
+.card {
+  border-radius: 10px; /* Borde redondeado */
+  transition: transform 1s ease, box-shadow 0.5s ease; /* Transiciones */
+} 
+
+
+
+
+
+
+.col {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  width: 286px; /* Ancho deseado */
+  height: 200px; /* Altura deseada */
+}
+.card-title {
+  font-family: 'Verdana';
+  font-weight: bold;
+}
+.card-body {
+  font-family: 'Ginebra', sans-serif; /* Tipografía */
+}
+.card-text {
+  color: #5d0882; /* Cambia el color del texto del cuerpo */
+}
+/* Estilos para el título, texto y botón dentro de la tarjeta al hacer hover */
+.card:hover .card-title,
+.card:hover .card-text,
+.card:hover .btn {
+  font-weight: bold; /* Texto en negrita */
+  transition: color 2s ease; /* Agregar una transición suave para el color */
+}
+
+
+    
+  
+.btn-primary {
+  display: block; /* Hace que los enlaces se muestren como bloques para ocupar todo el ancho disponible */
+  text-decoration: none; /* Quita la decoración de subrayado */
+  padding: 10px; /* Añade relleno alrededor del enlace */
+  color: #fff; /* Color del texto */
+  width: 75%; /* Ancho del enlace */
+  margin: auto; /* Centra el enlace horizontalmente */
+  border-radius: 10px; /* Agrega bordes redondeados al enlace */
+  font-weight: bold;
+  box-shadow: 1px 2px 6px 1px rgba(146, 93, 177, 0.797); /* Agrega una sombra al enlace */
+  transition: .2s; /* Establece una transición suave */
+  margin-top: 0%; /* Separación superior */
+  margin-bottom: 5%; /* Separación inferior */
+}
+/* Estilos para el botón dentro de la tarjeta al hacer hover */
+.card:hover .btn {
+  background-image: url('/img/iniciarsesion2.jpg'); /* Ruta a la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+  transition: transform 10s ease, background-image 10s ease 10s; /* Agregar transición suave con un retraso de 3 segundos */
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+.align-items-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary:hover {
+  box-shadow: 1px 2px 6px 1px rgb(100, 36, 160); /* Cambia la sombra del enlace al pasar el mouse sobre él */
+  transform: translateY(-3px); /* Mueve ligeramente el enlace hacia arriba al pasar el mouse sobre él */
+}
+.col{
+  width: 600px;
+}

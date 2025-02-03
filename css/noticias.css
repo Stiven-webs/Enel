@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(https://www.enelgreenpower.com/content/dam/enel-egp/immagini/learning-hub/energia-eolica/faq-wind_2400x960.jpg);
+    background-size: cover; /* Cubre todo el área del cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: scroll; /* Desplaza la imagen con el contenido al hacer scroll */
+}
+
+
+
+.mision{
+    padding: 0 0 0 0 ;
+    font-family: 'Courier New';
+    font-weight: bold;
+    line-height: 2; /* Espaciado entre líneas */
+    letter-spacing: 0.5px; /* Espaciado entre letras */
+    color: #006FBB; /* Color del texto */
+    margin-bottom: -10%; /* Márgenes inferiores */
+    animation: fade 2s ease-in-out infinite; /* Nombre de la animación, duración, función de temporización, repetición */
+    font-size: 50px; /* Tamaño de la fuente */
+    text-align: center;
+    margin: 0;
+}
+/* Define la animación */
+@keyframes fade {
+    0% { opacity: 3; } /* Inicio: totalmente visible */
+    50% { opacity: 0.5; } /* Mitad: semi-transparente */
+    100% { opacity: 1; } /* Fin: totalmente visible nuevamente */
+}
+.mision:hover{
+    font-size: 350%; /* Aumenta el tamaño de la fuente*/
+}
+
+
+/* Estilos para las publicaciones */
+.post {
+    background: #fff; /* Establece el color de fondo de las publicaciones */
+}
+.content{
+    display: grid; /* Establece la visualización del contenido como una cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Define tres columnas de igual tamaño */
+    grid-gap: 50px; /* Establece el espacio entre las cajas */
+    max-width: 1150px; /* Establece el ancho máximo del contenido */
+    margin: auto; /* Centra horizontalmente el contenido */
+}
+/* Estilos para las publicaciones */
+.post {
+    box-shadow: 0 1px 6px 1px rgb(0, 0, 0, .1); /* Agrega sombra a la publicación */
+    transition: .2s; /* Establece una transición suave */
+}
+/* Estilos al pasar el mouse sobre la publicación */
+.post:hover {
+    transform: translateY(-20px); /* Mueve la publicación hacia arriba */
+    box-shadow: 0 20px 25px 2.5px rgb(106, 99, 125); /* Cambia la sombra de la publicación */
+}
+.post-list{
+    width: 100%;
+    display: flex; /* Establece la visualización de los elementos como una fila */
+    min-height: 125vh; /* Establece la altura mínima de la vista al 100% del viewport */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    padding: 50px 25px; /* Establece el relleno alrededor del contenido */
+}
+
+
+
+.post-img-1{
+    width: 100%; /* Establece el ancho al 100% */
+    height: 200px; /* Establece la altura en 200px */
+    background-size: cover; /* Escala la imagen para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    transition: .2s; /* Establece una transición suave */
+}
+/* Estilos para la imagen de la publicación 1 */
+.post-img-2 {
+    width: 100%; /* Establece el ancho al 100% */
+    height: 200px; /* Establece la altura en 200px */
+    background-size: cover; /* Escala la imagen para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    transition: .2s; /* Establece una transición suave */
+}
+/* Estilos para la imagen de la publicación 3 */
+.post-img-3 {
+    width: 100%; /* Establece el ancho al 100% */
+    height: 200px; /* Establece la altura en 200px */
+    background-size: cover; /* Escala la imagen para cubrir el área */
+    background-position: center; /* Centra la imagen */
+    transition: .2s; /* Establece una transición suave */
+}
+/* Estilos para la cabecera de la publicación */
+.post-header {
+    width: 100%; /* Establece el ancho al 100% */
+    height: 200px; /* Establece la altura en 200px */
+    overflow: hidden; /* Oculta el contenido que desborda */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la cabecera */
+}
+/* Estilos al pasar el mouse sobre las imágenes de las publicaciones */
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3 {
+    transform: scale(1.1); /* Escala las imágenes al 110% */
+}
+
+
+
+.post-body h2 {
+    /* Estilos para el h2 dentro de .post-body */
+    font-size: 24px; /* Tamaño de fuente */
+    color: #E4010A; /* Color del texto */
+    font-family: 'Verdana';
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Espacio superior */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+.post-body {
+    font-family: 'Ginebra', sans-serif; /* Tipografía */    
+    font-weight: 400;
+    margin-bottom: 10px; /* Margen inferior */
+    color: #5c5c5c; /* Color de texto */
+    line-height: 1.5; /* Altura de línea */
+    text-align: justify; /* Justificar el texto horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify; /* Justificar el texto horizontalmente */
+    text-transform: none; /* Desactivar la transformación de mayúsculas y minúsculas */
+    height: 90%; /* Ajusta la altura del contenedor al 100% del contenedor padre */
+    margin-top: 25px; /* Ajusta el valor según la separación deseada */
+}
+/* Estilos para el cuerpo de la publicación */
+.post-body {
+    padding: 18px; /* Añade relleno alrededor del contenido del cuerpo */
+    text-align: center; /* Centra el texto */
+}
+
+
+/* Estilos para los enlaces dentro del cuerpo de la publicación */
+.post-body .post-link {
+    display: block; /* Hace que los enlaces se muestren como bloques para ocupar todo el ancho disponible */
+    text-decoration: none; /* Quita la decoración de subrayado */
+    padding: 10px; /* Añade relleno alrededor del enlace */
+    background: #E4010A; /* Color de fondo del enlace */
+    color: #fff; /* Color del texto */
+    width: 50%; /* Ancho del enlace */
+    margin: auto; /* Centra el enlace horizontalmente */
+    border-radius: 10px; /* Agrega bordes redondeados al enlace */
+    font-weight: bold;
+    box-shadow: 1px 2px 6px 1px rgb(0, 0, 0, .1); /* Agrega una sombra al enlace */
+    transition: .2s; /* Establece una transición suave */
+    margin-top: 10%; /* Separación superior */
+    margin-bottom: 5%; /* Separación inferior */
+}
+/* Estilos para el enlace dentro del cuerpo de la publicación al pasar el mouse sobre él */
+.post-body .post-link:hover {
+    background: #009A7A; /* Cambia el color de fondo del enlace al pasar el mouse sobre él */
+    box-shadow: 1px 2px 6px 1px rgb(0, 0, 0, .2); /* Cambia la sombra del enlace al pasar el mouse sobre él */
+    transform: translateY(-5px); /* Mueve ligeramente el enlace hacia arriba al pasar el mouse sobre él */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para los elementos <span> dentro del cuerpo de la publicación */
+.post-body span {
+    display: inline-block; /* Hace que los elementos <span> se muestren en línea y se puedan alinear verticalmente */
+    color: #999; /* Color del texto */
+    margin-bottom: 15px; /* Añade un margen inferior */
+}
+/* Estilos para los encabezados <h2> dentro del cuerpo de la publicación */
+.post-body h2 {
+    margin-bottom: 15px; /* Añade un margen inferior */
+}
+/* Estilos para los párrafos <p> dentro del cuerpo de la publicación */
+.post-body p {
+    line-height: 1.5; /* Establece el espaciado entre líneas */
+    margin-bottom: 20px; /* Añade un margen inferior */
+}
+
+
+section, article, div {
+    box-sizing: border-box;
+}
+
+
+
+
+/* Consulta de medios para pantallas con un ancho máximo de 840px */
+@media (max-width: 840px) {
+    .content {
+        grid-template-columns: repeat(2, 1fr); /* Cambia el diseño a dos columnas */
+    }
+}
+
+/* Consulta de medios para pantallas con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: repeat(1, 1fr); /* Cambia el diseño a una sola columna */
+    }
+}

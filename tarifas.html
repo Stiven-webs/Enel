@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tarifas.css">
+    <link rel="stylesheet" href="css/encabezado.css">
+    <link rel="shortcut icon" href="img/enel.ico">
+    <script src="https://kit.fontawesome.com/130a869bed.js" crossorigin="anonymous"></script>
+    <title>Tarifas</title>
+</head>
+<body>
+      <!--barra de navegacion-->
+      <nav class="header-nav">
+        <input type="checkbox" name="search" id="search">
+        <div class="search__input-container">
+          <input type="text" placeholder="Buscar..." class="search-input">
+          <label for="search"><i class="fa-solid fa-x" style="color: #fff; cursor: pointer;"></i></label>
+        </div>
+        <div class="home">
+          <label for="menu-hidden" class="menu-hidden">
+            &#9776;
+          </label>
+          <div class="header-nav-item logo-container">
+            <a href="index.html" class="logo">
+              <img src="img/logo-god.png" alt="Logo">
+            </a>
+          </div>
+        </div>
+        <div class="icons">
+          <div class="search-container">
+    
+            <label for="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+          </div>
+          <div class="header-nav-item login__container">
+            <a href="login.html" class="login"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </nav>
+      <!--Menu Oculto-->
+    <input type="checkbox" name="menu-hidden" id="menu-hidden" />
+    <div class="menu__list-hidden">
+      <ul class="header-nav-item header-list">
+        <li class="list-item">
+          <a href="noticias.html" class="list-link">NOTICIAS</a>
+        </li>
+        <li class="list-item">
+          <a href="consultas.html" class="list-link">CONSULTAS</a>
+        </li>
+        <li class="list-item">
+          <a href="servicios.html" class="list-link">SERVICIOS</a>
+        </li>
+        <li class="list-item">
+          <a href="tarifas.html" class="list-link">TARIFAS</a>
+        </li>
+        <li class="list-item">
+          <a href="misionyvision.html" class="list-link">MISIÓN Y VISIÓN</a>
+        </li>
+        <li class="list-item">
+          <a href="redes.html" class="list-link">BENEFICIOS</a>
+        </li>
+        <li class="list-item">
+          <a href="oficinas.html" class="list-link">NUESTRAS OFICINAS</a>
+        </li>
+      </ul>
+    </div>
+
+<!--recibo-->
+    <div class="textorecibo">
+        <h3>Te explicamos tu último recibo de luz</h3>
+    </div>
+    <div class="textorecibo1">
+        <p>(haz click en cada número para ver la explicación)</p>
+    </div>
+    <div class="imagenrecibo">
+        <img src="img/recibo.webp" alt="">
+    </div>
+    
+<!--botones-->
+<div class="boton1">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          1
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <h4>Suministro:</h4>
+          Numero para identificar el servicio del usuario.
+        </div>
+      </div>  
+</div>
+
+<div class="boton2">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+          6
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+            <h4>Detalle de facturacion:</h4>
+            Aqui aparecera el importe de IGV, la mora en caso de retraso de pago, 
+            el cobro del servicio de alumbrado publico, entre otros.
+        </div>
+      </div>  
+</div>
+
+<div class="boton3">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+          5
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample3">
+        <div class="card card-body">
+          <h4>Detalles del suministro:</h4>
+          Aqui aparecera la informacion relacionada con los datos del suministro <br>
+          como la potencia, tipo de medidor, etc.
+        </div>
+      </div> 
+</div>
+
+<div class="boton4">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+          2
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample4">
+        <div class="card card-body">
+          <h4>Consumo historico:</h4>
+          Aqui encontrara un grafico en cual estara a detalle el <br>
+          consumo de los meses anteriores del usuario.
+        </div>
+      </div> 
+</div>
+<div class="boton5">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+          3
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample5">
+        <div class="card card-body">
+          <h4>Detalle del consumo:</h4>
+          Aqui aparecera el registro anterior de consumo<br>
+          y el consumo del mes actual.
+        </div>
+      </div> 
+</div>
+
+<div class="boton6">
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample">
+          4
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample6">
+        <div class="card card-body">
+          <h4>Información de Pago:</h4>
+          Aqui encontraremos la fecha de emision y vencimiento <br>
+          del recibo del usuario o empresa.
+        </div>
+      </div> 
+</div>
+
+<footer class="footer">
+  <ul class="social-icon">
+    <a href="https://www.youtube.com/channel/UC2agwzgoUCiuS_HYU7WQLIw" class="icon">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://www.facebook.com/EnelPeru" class="icon">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+    <a href="https://x.com/enelperu" class="icon">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://api.whatsapp.com/send/?phone=573168906003&text&type=phone_number&app_absent=0%20" class="icon">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </ul>
+  <ul class="footermenu">
+    <li class="menuitem"><a href="#" class="menulink">Políticas de Cookies</a></li>
+    <li class="menuitem"><a href="#" class="menulink">Contáctanos</a></li>
+    <li class="menuitem"><a href="#" class="menulink">Políticas de Privacidad</a></li>
+    <li class="menuitem"><a href="#" class="menulink">Transferencia de Información a Empresas</a></li>
+    <li class="menuitem"><a href="#" class="menulink">Canal Ético</a></li>
+    <li class="menuitem"><a href="#" class="menulink">Preferencias sobre Cookies</a></li>
+  </ul>
+  <p class="footertxt">&COPY; Enel Distribución Perú 2024</p>
+</footer>
+</body>
+</html>

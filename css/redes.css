@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: rgba(8, 126, 8, 0.63);
+}
+
+.container{
+    margin: 2% 10%;
+}
+
+.titulo{
+    font-size: 90px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+.imagen_principal{
+    position: absolute;
+    right: 13%;
+}   
+
+.principal{
+    margin-top: 100px;
+    width: 400px;
+    height: 600px;
+}
+
+.principal:hover{
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.parte_1{
+    background-color: rgb(44, 127, 187);
+    width: 1500px; 
+    height: 400px;
+    display: flex;
+    align-items: center; 
+    padding-left: 0;
+}
+
+.parte_1 h4{
+    color: #f4f4f4;
+    font-size: 75px;
+    width: auto; 
+    max-width: 1000px; 
+    padding-left: 10px;
+    text-align: center;
+}   
+
+.parte_2{
+    background-color: #f3f3f3;
+    width: 1500px;
+    height: 400px;
+    display: flex;
+}
+
+.medallas{
+    background-color: white; 
+    border: 10px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 230px;
+    padding: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.medallas:hover{
+    transform: scale(1.1) translateY(-10px);
+
+}
+
+.medallas img {
+    width: 125px;
+    height: 150px;
+    margin-bottom: 10px; 
+}
+
+.medallas img:hover{
+    transform: scale(1.1) translateY(-10px);
+}
+
+.medallas p {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.registro {
+    background-color: #00a1e1;
+    color: #322d38;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: 'Verdana', sans-serif; /* Tipografía */ 
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto de aumento ligero al acercar el mouse */
+.registro:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #48208d92; /* Cambio de color de fondo */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-family: Cambria; /* Tipo de fuente */
+    font-weight: bold;
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.boton:hover {
+    background-color: #46998d; /* Cambio de color de fondo al pasar el mouse */
+    transform: scale(1.09); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 0 20px rgba(54, 45, 140, 0.792); /* Agrega una sombra */
+}

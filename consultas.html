@@ -1,0 +1,152 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Consultas</title>
+	<link rel="stylesheet" href="css/consultas.css">
+	<link rel="stylesheet" href="css/encabezado.css">
+	<link rel="shortcut icon" href="img/enel.ico">
+	<link rel="stylesheet" href="css/footer.css">
+	<script src="https://kit.fontawesome.com/130a869bed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<script>
+		function mostrarMensaje() {
+			alert("Mensaje Enviado")
+		}
+	</script>
+	<!--barra de navegacion-->
+	<nav class="header-nav">
+		<input type="checkbox" name="search" id="search">
+		<div class="search__input-container">
+		  <input type="text" placeholder="Buscar..." class="search-input">
+		  <label for="search"><i class="fa-solid fa-x" style="color: #fff; cursor: pointer;"></i></label>
+		</div>
+		<div class="home">
+		  <label for="menu-hidden" class="menu-hidden">
+			&#9776;
+		  </label>
+		  <div class="header-nav-item logo-container">
+			<a href="index.html" class="logo">
+			  <img src="img/logo-god.png" alt="Logo">
+			</a>
+		  </div>
+		</div>
+		<div class="icons">
+		  <div class="search-container">
+	
+			<label for="search">
+			  <i class="fa-solid fa-magnifying-glass"></i>
+			</label>
+		  </div>
+		  <div class="header-nav-item login__container">
+			<a href="login.html" class="login"><i class="fa-solid fa-user"></i></a>
+		  </div>
+		</div>
+	  </nav>
+	  <!--Menu Oculto-->
+	  <input type="checkbox" name="menu-hidden" id="menu-hidden" />
+	  <div class="menu__list-hidden">
+		<ul class="header-nav-item header-list">
+		  <li class="list-item">
+			<a href="noticias.html" class="list-link">NOTICIAS</a>
+		  </li>
+		  <li class="list-item">
+			<a href="consultas.html" class="list-link">CONSULTAS</a>
+		  </li>
+		  <li class="list-item">
+			<a href="servicios.html" class="list-link">SERVICIOS</a>
+		  </li>
+		  <li class="list-item">
+			<a href="tarifas.html" class="list-link">TARIFAS</a>
+		  </li>
+		  <li class="list-item">
+			<a href="misionyvision.html" class="list-link">MISIÓN Y VISIÓN</a>
+		  </li>
+		  <li class="list-item">
+			<a href="redes.html" class="list-link">BENEFICIOS</a>
+		  </li>
+		  <li class="list-item">
+			<a href="oficinas.html" class="list-link">NUESTRAS OFICINAS</a>
+		  </li>
+		</ul>
+	  </div>
+	
+	<!-- formulario de contacto en html y css -->
+	<div class="todo">
+		<div class="contact_form">
+			<div class="formulario">
+				<h1>Formulario de consultas</h1>
+				<h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+				<p>
+					<label for="nombre" class="colocar_nombre">Nombre
+						<span class="obligatorio">*</span>
+					</label>
+					<input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+						placeholder="Escribe tu nombre">
+				</p>
+				<p>
+					<label for="email" class="colocar_email">Email
+						<span class="obligatorio">*</span>
+					</label>
+					<input type="email" name="introducir_email" id="email" required="obligatorio"
+						placeholder="Escribe tu Email">
+				</p>
+				<p>
+					<label for="telefone" class="colocar_telefono">Teléfono</label>
+					<input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+				</p>
+				<p>
+					<label for="asunto" class="colocar_asunto">Asunto
+						<span class="obligatorio">*</span>
+					</label>
+					<input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+						placeholder="Escribe un asunto">
+				</p>
+				<p>
+					<label for="mensaje" class="colocar_mensaje">Mensaje
+						<span class="obligatorio">*</span>
+					</label>
+					<textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+						placeholder="Deja aquí tu comentario..."></textarea>
+				</p>
+				<button type="submit" id="enviar" onclick="mostrarMensaje()">
+					<p>Enviar</p>
+				</button>
+				<p class="aviso">
+					<span class="obligatorio"> * </span>los campos son obligatorios.
+				</p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+        <ul class="social-icon">
+			<a href="https://www.youtube.com/channel/UC2agwzgoUCiuS_HYU7WQLIw" class="icon">
+			  <i class="fa-brands fa-youtube"></i>
+			</a>
+			<a href="https://www.facebook.com/EnelPeru" class="icon">
+			  <i class="fa-brands fa-facebook"></i>
+			</a>
+			<a href="https://x.com/enelperu" class="icon">
+			  <i class="fa-brands fa-x-twitter"></i>
+			</a>
+			<a href="https://api.whatsapp.com/send/?phone=573168906003&text&type=phone_number&app_absent=0%20" class="icon">
+			  <i class="fa-brands fa-whatsapp"></i>
+			</a>
+		  </ul>
+        <ul class="footermenu">
+          <li class="menuitem"><a href="#" class="menulink">Políticas de Cookies</a></li>
+          <li class="menuitem"><a href="#" class="menulink">Contáctanos</a></li>
+          <li class="menuitem"><a href="#" class="menulink">Políticas de Privacidad</a></li>
+          <li class="menuitem"><a href="#" class="menulink">Transferencia de Información a Empresas</a></li>
+          <li class="menuitem"><a href="#" class="menulink">Canal Ético</a></li>
+          <li class="menuitem"><a href="#" class="menulink">Preferencias sobre Cookies</a></li>
+        </ul>
+        <p class="footertxt">&COPY; Enel Distribución Perú 2024</p>
+      </footer>
+
+</body>
+</html>
